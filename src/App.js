@@ -1,8 +1,8 @@
 import './App.scss';
 import Header from './Header';
 import Quote from './Quote';
-import SvgImage from './svg.js';
-import svgSrc from './image/joyeux anniversaire'; 
+import SvgImage from './Svg.js';
+import svgSrc from './image/happy-birthday.svg';
 
 function App() {
   return (
