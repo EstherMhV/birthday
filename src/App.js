@@ -14,7 +14,7 @@ function App() {
       <Header />
       <div className="content">
         <div className="left-column">
-          <SvgImage src={svgHbd} />
+        <SvgImage className="SvgImage" src={svgHbd} />
         </div>
         <div className="right-column">
           <div className="column">

@@ -32,6 +32,8 @@ $background: #FFFFFF;
       height: 100vh;
     }
 
+    
+
     .right-column {
       position: relative;
       width: 50%;
@@ -61,11 +63,13 @@ $background: #FFFFFF;
         grid-template-columns: 1fr;
         box-sizing: border-box;
         align-content: start;
+        border-radius: 2%;
       }
 
       .box-with-shadow {
         border: 2px solid black;
         box-shadow: -7px 7px 0px -3px $color, -7px 7px 0px -1px $black;
+        border-radius: 2%;
       }
 
       .quote {
