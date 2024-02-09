@@ -17,13 +17,14 @@ function App() {
           <SvgImage src={svgHbd} />
         </div>
         <div className="right-column">
-        <div className="column">
-          <div className="container box-with-shadow">
-            <Quote />
+          <div className="column">
+            <div className="container box-with-shadow">
+              <Quote />
+            </div>
+            <div className="container box-with-shadow">
+              <div class="gif"><iframe src="https://giphy.com/embed/l0ExwdBR4em4BrcCA" allowFullScreen></iframe></div>
+            </div>
           </div>
-          <div className="container box-with-shadow">
-          <div class="gif"><iframe src="https://giphy.com/embed/l0ExwdBR4em4BrcCA"   allowFullScreen></iframe></div></div>
-        </div>
         </div>
       </div>
     </div>
