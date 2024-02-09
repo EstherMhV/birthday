@@ -1,11 +1,12 @@
 $color : #DF80AC;
 $font : 'Bison';
 $black: #000000;
+$background: #FFFFFF;
 
 
 
 .App {
-  
+
 
   .App-header {
     font-family: $font, sans-serif;
@@ -13,6 +14,7 @@ $black: #000000;
     top: 0;
     width: 100;
     z-index: 100;
+    border: 2px solid $black;
   }
 
   .content {
@@ -30,45 +32,47 @@ $black: #000000;
       position: relative;
       width: 50%;
       height: 100%;
-
-      .rectangle-6 {
-        box-sizing: border-box;
-        position: absolute;
-        justify-content: center;
+      background-color: $background;
+      margin-top: 10px;
+      padding:  30px; 
+    
+      .gif {
         width: 100%;
-        height: 100%;
-        background: $color;
-        border: 2px solid $black;
-        border-radius: 14px;
+        padding-bottom: 75%;
+        position: center;
       }
-
-      .rectangle-7 {
-        box-sizing: border-box;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #FFFFFF;
-        border: 2px solid $black;
-        border-radius: 14px;
-        padding: 15px; // Adjust as needed
-
-        .quote {
-          font-family: $font;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 27px;
-          line-height: 32px;
-          letter-spacing: 0.045em;
-          color: #000000;
-        }
+    
+      .column {
+        display: flex;
+        flex-direction: column;
       }
-    }
-
-    .left-column,
-    .right-column {
-      flex: 1;
-    }
-
-
+    
+      .container {
+        width: 80%; 
+        height: 60%;
+        margin-bottom: 10px; 
+        box-sizing: border-box; 
+      }
+    
+      .box-with-shadow {
+        border: 2px solid black;
+        box-shadow: -7px 7px 0px -3px $color,-7px 7px 0px -1px $black; 
+      }
+    
+      .quote {
+        font-family: $font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 27px;
+        line-height: 32px;
+        letter-spacing: 0.045em;
+        color: $black;
+      }
   }
+
+  .left-column,
+  .right-column {
+    flex: 1;
+  }
+}
 }
