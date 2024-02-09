@@ -1,8 +1,8 @@
 import './App.scss';
 import Header from './Header';
 import Quote from './Quote';
-import SvgImage from './SvgImage';
-import svgSrc from './your-svg.svg'; // replace with your actual svg file path
+import SvgImage from './svg.js';
+import svgSrc from './image/joyeux anniversaire'; 
 
 function App() {
   return (
