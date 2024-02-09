@@ -1,46 +1,31 @@
+$font : #DF80AC;
+
 .App {
+  font-family: 'Bison', sans-serif;
+
+  .App-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
   .content {
+    width: 100vw;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 
-    .left-column {}
+    .left-column  {
+      background-color :$font;
+    }
 
-    .right-column {}
-  }
-}
-
-.Happy-birthday {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .Happy-birthday {
-    animation: happy-birthday infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
+    .right-column {
+      
+    }
+    .left-column, .right-column {
+      flex: 1;
+    }
   }
 }
