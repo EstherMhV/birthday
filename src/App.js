@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './Header';
+import Quote from './Quote';
+import SvgImage from './SvgImage';
+import svgSrc from './your-svg.svg'; // replace with your actual svg file path
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="content">
+        <div className="left-column">
+          <SvgImage src={svgSrc} />
+          {/* Add more SvgImage components as needed */}
+        </div>
+        <div className="right-column">
+          <Quote />
+          <SvgImage src={svgSrc} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Bison';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d5d5d5;
+}
+
+$font-text : 'Bison' ;
+$font-color : #000000;
+$color1: #d82121;
+$color2 : #da2473;
+$color3 : #248eda;
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: $font-color ;
+    font-family: $font-text;
+  }
+}
