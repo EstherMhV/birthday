@@ -1,2 +1,2 @@
 # birthday
-mini project to learn  scss
+mini project to learn  scss/sass
